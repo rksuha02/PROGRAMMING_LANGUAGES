@@ -1,0 +1,9 @@
+﻿  main.c
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(11,24): warning C4013: tolower: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(14,23): warning C4013: strlen: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(70,13): warning C4477: "fscanf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "city *"
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(73,34): warning C4047: функция: "city *" отличается по уровням косвенного обращения от "city (*)[100]"
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(73,27): warning C4024: Getfirst: различные типы для формального и фактического параметров 1
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(74,40): warning C4047: функция: "city *" отличается по уровням косвенного обращения от "city (*)[100]"
+C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\main.c(74,33): warning C4024: GetSequenceOrder: различные типы для формального и фактического параметров 3
+  Audit3.vcxproj -> C:\Users\rksen\OneDrive\Рабочий стол\информатика\Audit3\Debug\Audit3.exe
