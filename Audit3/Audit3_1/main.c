@@ -9,7 +9,7 @@ void Shift(int* mass, int startShift, int s)
 	}
 }
 
-void ChangeArray(int* mass, int* s) {
+int* ChangeArray(int* mass, int* s) {
 	for (int i = 0; i < *s; i++) {
 		for (int j = i + 1; j < *s; j++) {
 			if (mass[i] == mass[j])
@@ -20,18 +20,25 @@ void ChangeArray(int* mass, int* s) {
 			}
 		}
 	}
+	int* newArray = (int*)malloc(*s * sizeof(int));
+	for (int i = 0; i < s; i++) {
+		newArray[i] = mass[i];
+	}
+	int a = sizeof(newArray);
+	free(mass);
+	return newArray;
 }
 
 int main() {
-	int c[N];
+	int *c = (int*)malloc(N * sizeof(int));
 	int s;
 	scanf("%d", &s);
 	for (int i = 0; i < s; i++) {
 		scanf("%d", &c[i]);
 	}
-
-	ChangeArray(c, &s);
-
+	int a = sizeof(c);
+	c=ChangeArray(c, &s);
+	a = sizeof(c);
 	printf("\n");
 	for (int i = 0; i < s; i++) {
 		printf("%d ", c[i]);
